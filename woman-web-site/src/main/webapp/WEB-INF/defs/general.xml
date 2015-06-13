@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="home_page" extends="common">
+		<put-attribute name="title" value="Woman Perspective" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home_page.jsp" />
+		<put-attribute name="current" value="home_page"></put-attribute>
+	</definition>
+
+	<definition name="news" extends="common">
+		<put-attribute name="title" value="News" />
+		<put-attribute name="body" value="/WEB-INF/jsp/news.jsp" />
+		<put-attribute name="current" value="news"></put-attribute>
+	</definition>
+
+	<definition name="questionnaire" extends="common">
+		<put-attribute name="title" value="Ask the question" />
+		<put-attribute name="body" value="/WEB-INF/jsp/questionnaire.jsp" />
+		<put-attribute name="current" value="questionnaire"></put-attribute>
+	</definition>
+
+	<definition name="event" extends="common">
+		<put-attribute name="title" value="Event" />
+		<put-attribute name="body" value="/WEB-INF/jsp/event.jsp" />
+		<put-attribute name="current" value="event"></put-attribute>
+	</definition>
+
+	<definition name="project" extends="common">
+		<put-attribute name="title" value="Project" />
+		<put-attribute name="body" value="/WEB-INF/jsp/project.jsp" />
+		<put-attribute name="current" value="project"></put-attribute>
+	</definition>
+
+	<definition name="donors" extends="common">
+		<put-attribute name="title" value="Donors" />
+		<put-attribute name="body" value="/WEB-INF/jsp/donors.jsp" />
+		<put-attribute name="current" value="donors"></put-attribute>
+	</definition>
+
+	<definition name="donate" extends="common">
+		<put-attribute name="title" value="Donate" />
+		<put-attribute name="body" value="/WEB-INF/jsp/donate.jsp" />
+		<put-attribute name="current" value="donate"></put-attribute>
+	</definition>
+
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+
+	<definition name="administration" extends="common">
+		<put-attribute name="title" value="Administration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/administration.jsp" />
+		<put-attribute name="current" value="administration" />
+	</definition>
+
+	<definition name="archive" extends="common">
+		<put-attribute name="title" value="Archive" />
+		<put-attribute name="body" value="/WEB-INF/jsp/archive.jsp" />
+		<put-attribute name="current" value="archive" />
+	</definition>
+
+	<definition name="album" extends="common">
+		<put-attribute name="title" value="Photo album" />
+		<put-attribute name="body" value="/WEB-INF/jsp/album.jsp" />
+		<put-attribute name="current" value="album" />
+	</definition>
+
+	<definition name="newsprofile" extends="common">
+		<put-attribute name="title" value="Edit News" />
+		<put-attribute name="body" value="/WEB-INF/jsp/newsprofile.jsp" />
+		<put-attribute name="current" value="newsprofile" />
+	</definition>
+
+
+</tiles-definitions>
